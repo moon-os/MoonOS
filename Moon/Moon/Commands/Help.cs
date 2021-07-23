@@ -13,11 +13,7 @@ namespace Moon.Commands
 
         public override string execute(string[] args)
         {
-            String response;
-
-            response += "------ Moon Help ------";
-
-            return response;
+            return "------ Moon Help ------\nhelp";
         }
 
     }

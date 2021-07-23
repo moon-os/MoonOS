@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Moon.Commands
 {
-    class Command
+    public class Command
     {
         public readonly String name;
 
