@@ -12,6 +12,9 @@ namespace Moon.Commands
         {
             this.commands = new List<Command>(1);
             this.commands.Add(new Help("help"));
+            this.commands.Add(new Power("power"));
+            this.commands.Add(new Calculator("calc"));
+            this.commands.Add(new Clear("clear"));
         }
 
         public String processInput(String input)

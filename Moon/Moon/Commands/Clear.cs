@@ -4,16 +4,17 @@ using System.Text;
 
 namespace Moon.Commands
 {
-    public class Help : Command
+    public class Clear : Command
     {
-        public Help(String name) : base(name)
+        public Clear(String name) : base(name)
         {
 
         }
 
         public override string execute(string[] args)
         {
-            return "------ Moon Help ------\nhelp\npower\n\tshutdown\n\treboot\n\trestart\ncalc\nclear";
+            Console.Clear();
+            return "";
         }
 
     }
