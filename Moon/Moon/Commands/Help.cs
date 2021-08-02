@@ -13,6 +13,10 @@ namespace Moon.Commands
 
         public override string execute(string[] args)
         {
+            foreach (string i in args)
+            {
+                Console.WriteLine(i);
+            }
             return "------ Moon Help ------\nhelp\npower\n\tshutdown\n\treboot\n\trestart\ncalc\nclear";
         }
 

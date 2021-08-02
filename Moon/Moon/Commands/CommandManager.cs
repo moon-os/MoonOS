@@ -10,11 +10,12 @@ namespace Moon.Commands
 
         public CommandManager()
         {
-            this.commands = new List<Command>(1);
-            this.commands.Add(new Help("help"));
+            this.commands = new List<Command>(5);
             this.commands.Add(new Power("power"));
+            this.commands.Add(new Help("help"));
             this.commands.Add(new Calculator("calc"));
             this.commands.Add(new Clear("clear"));
+            this.commands.Add(new File("file"));
         }
 
         public String processInput(String input)

@@ -19,6 +19,8 @@ namespace Moon
             Console.Clear();
             //Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Moon " + Version + "\n");
+
+            Moon.Filesystem.TempFS.initFilesystem();
         }
 
         protected override void Run()
@@ -35,6 +37,7 @@ namespace Moon
             Console.Write("> ");
 
             response = this.commandManager.processInput(Console.ReadLine());
+            Console.WriteLine(response);
          }
     }
 }
