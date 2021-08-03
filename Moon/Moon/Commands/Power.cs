@@ -29,6 +29,8 @@ namespace Moon.Commands
                     Console.WriteLine("Restarting...");
                     Sys.Power.Reboot();
                     break;
+                case "test":
+                    break;
             }
             return "";
         }
